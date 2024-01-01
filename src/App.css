@@ -1,0 +1,41 @@
+#root {
+  max-width: 1280px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  overflow-x:hidden ;
+  /* background-color: red; */
+}
+
+.main-container{
+  width: inherit;
+  margin: 0px auto;
+  border: 1px solid blue;
+
+
+}
+.nav{
+  
+  margin: 0px;
+  width: 100%;
+  border: 1px solid blue;
+  padding: 0px 40px;
+}
+.nav-item{
+  padding: 5px 0px;
+}
+.active{
+  border-bottom:1px solid blue;
+  border-top:1px solid blue;
+}
+.logo{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.nav{
+  /* background-color: red; */
+}
