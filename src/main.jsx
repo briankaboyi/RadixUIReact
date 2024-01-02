@@ -7,7 +7,7 @@ import { Theme, ThemePanel } from "@radix-ui/themes";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Theme accentColor="blue" grayColor="sand" radius="medium" scaling="110%" >
+    <Theme grayColor="sand" scaling="95%">
       <App />
       {/* <ThemePanel /> */}
     </Theme>
