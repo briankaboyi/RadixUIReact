@@ -1,6 +1,5 @@
-import { Button, Flex, Text } from "@radix-ui/themes";
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Button, Flex, Text } from '@radix-ui/themes'
+import React, { useState } from 'react'
 
 export default function Nav() {
   const active = "active";
@@ -14,50 +13,22 @@ export default function Nav() {
       // c.classList.add(inactive);
 
       if (c.classList.contains(active)) {
-        c.classList.remove(inactive);
+        c.classList.remove(active)
+        c.classList.add(inactive)
       }
     }
-    // element.classList.remove(inactive);
+    element.classList.remove(inactive)
 
-  };
- 
+    element.classList.add(active)
+  }
   return (
     <Flex className="nav" justify="between" align={"center"}>
       <Text className="logo">Urban</Text>
       <Flex className="nav-bar" gap="5">
-        <NavLink to="/">
-          <Text
-          size="1"
-          weight="bold"
-          onClick={handleClick}
-          className={"nav-item " }
-        >
-          Home
-        </Text>
-        </NavLink>
-        
-       
-        <NavLink to="property">
-          <Text
-          size="1"
-          weight="bold"
-          onClick={handleClick}
-          className={"nav-item " }
-        >
-          Property
-        </Text>
-        </NavLink>
-        
-        <NavLink to="contacts" >
-        <Text
-          size="1"
-          weight="bold"
-          onClick={handleClick}
-          className={"nav-item " }
-        >
-          Contact
-        </Text>
-        </NavLink>
+        <Text size="1" weight="bold" onClick={handleClick} className={"nav-item " + active}>Home</Text>
+        <Text size="1" weight="bold" onClick={handleClick} className={"nav-item " + inactive}>Services</Text>
+        <Text size="1" weight="bold" onClick={handleClick} className={"nav-item " + inactive}>Property</Text>
+        <Text size="1" weight="bold" onClick={handleClick} className={"nav-item " + inactive}>Contact</Text>
       </Flex>
       <Flex gap="5">
         <Button size="2" variant="outline">
