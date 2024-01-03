@@ -2,9 +2,10 @@
   max-width: 1280px;
   width: 100vw;
   height: 100vh;
-  margin: 0 ;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
+  overflow-x: hidden;
   overflow-x: hidden;
   /* background-color: red; */
 }
@@ -12,6 +13,7 @@
 .main-container {
   width: inherit;
   margin: 0px auto;
+  border: 1px solid blue;
 }
 .nav {
   margin: 20px 0px;
@@ -20,8 +22,13 @@
 }
 .nav-item {
   padding: 5px 0px;
-  position: relative;
   cursor: pointer;
+  position: relative;
+
+
+}
+.active {
+  position: relative;
 }
 
 .nav-item::after {
@@ -42,6 +49,10 @@
 .logo {
   font-weight: bold;
   font-size: 20px;
+}
+
+.nav {
+  /* background-color: red; */
 }
 
 .hero {
