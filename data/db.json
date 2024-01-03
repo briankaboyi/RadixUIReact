@@ -1,0 +1,54 @@
+{
+  "houses": [
+    {
+      "id": 1,
+      "area": "Suburbia Estates",
+      "address": "123 Main Street",
+      "price": 350000,
+      "bedrooms": 4,
+      "bathrooms": 2.5,
+      "square_feet": 2500,
+      "garage": true
+    },
+    {
+      "id": 2,
+      "area": "Downtown Heights",
+      "address": "456 Oak Avenue",
+      "price": 500000,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "square_feet": 2000,
+      "garage": false
+    },
+    {
+      "id": 3,
+      "area": "Lakeview Gardens",
+      "address": "789 Pine Lane",
+      "price": 600000,
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "square_feet": 3200,
+      "garage": true
+    },
+    {
+      "id": 4,
+      "area": "Mountain View Estates",
+      "address": "101 Hilltop Road",
+      "price": 450000,
+      "bedrooms": 4,
+      "bathrooms": 2.5,
+      "square_feet": 2800,
+      "garage": true
+    },
+    {
+      "id": 5,
+      "area": "Riverside Haven",
+      "address": "222 Willow Street",
+      "price": 750000,
+      "bedrooms": 6,
+      "bathrooms": 3.5,
+      "square_feet": 4000,
+      "garage": true
+    }
+  ]
+}
