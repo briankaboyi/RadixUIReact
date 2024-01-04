@@ -10,7 +10,7 @@
       "bathrooms": 2.5,
       "square_feet": 2500,
       "garage": true,
-      "image":"../src/assets/h1"
+      "image":"../src/assets/h1.jpg"
     },
     {
       "id": 2,
@@ -21,7 +21,7 @@
       "bathrooms": 3,
       "square_feet": 2000,
       "garage": false,
-      "image":"../src/assets/h2"
+      "image":"../src/assets/h2.jpg"
 
     },
     {
@@ -33,7 +33,7 @@
       "bathrooms": 4,
       "square_feet": 3200,
       "garage": true,
-      "image":"../src/assets/h3"
+      "image":"../src/assets/h3.jpg"
 
     },
     {
@@ -45,7 +45,7 @@
       "bathrooms": 2.5,
       "square_feet": 2800,
       "garage": true,
-      "image":"../src/assets/h4"
+      "image":"../src/assets/h4.jpg"
 
     },
     {
@@ -57,7 +57,7 @@
       "bathrooms": 3.5,
       "square_feet": 4000,
       "garage": true,
-      "image":"../src/assets/h5"
+      "image":"../src/assets/h5.jpg"
 
     }
   ]

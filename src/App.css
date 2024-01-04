@@ -278,7 +278,7 @@ button {
   color: #fff;
 }
 .house-cards{
-  width:80%;
+  width:60%;
   /* border: 1px solid red; */
   background: white;
   padding: 30px;
@@ -291,7 +291,7 @@ button {
 .house-cards .card-item{
   box-sizing: border-box;
   display: grid;
-  max-width: 600px;
+  max-width: 650px;
   width: 100%;
   height: 230px;
   grid-template-columns: 250px 2fr 1fr;
@@ -299,6 +299,7 @@ button {
   justify-items: start;
   background: #dbdbdb;
   box-shadow: -2px 7px 30px -12px rgba(0, 0, 0, 0.274);
+  gap: 10px;
 
 }
 

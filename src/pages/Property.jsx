@@ -1,17 +1,23 @@
 import { ChevronDownIcon, EyeClosedIcon, HeartFilledIcon, HeartIcon, LinkBreak2Icon, RulerSquareIcon } from '@radix-ui/react-icons'
 import { Flex, Grid, Text } from '@radix-ui/themes'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import h1 from "../assets/h1.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import getAllHouses from '../../services/houses.api'
 // import { faCoffee, heart } from '@fortawesome/free-solid-svg-icons'
 
 function Property() {
-    
-    useEffect(()=>{
-        
-        getAllHouses()
-    },[])
+    const [houses, setHouses] = useState([])
+    async function getData() {
+        const data = await getAllHouses()
+        console.log(data)
+        setHouses(data)
+    }
+    console.log(houses)
+    useEffect(() => {
+
+        getData()
+    }, [])
 
     return (
         <Grid className='property'>
@@ -21,39 +27,46 @@ function Property() {
             </Flex>
             <Flex className="house-cards" direction="column" align="start" gap="6">
                 <Text size="8" weight="medium">Best Options</Text>
-                <div className="card-item">
-                    <div className="card-img">
+                {
+                    houses.map((house) => {
+                        return (
+                            <div className="card-item">
+                                <div className="card-img">
 
-                        <img src={h1} alt="" />
-                    </div>
-                    <Flex className="details" direction="column" align="start" gap="4">
-                        <Text className='title' size="4" weight="medium">Suburbia Estates</Text>
-                        <Text className='address' size="1" weight="">123 Main Street</Text>
-                        <Flex className="card-badges" gap="2">
-                            <Flex className="badge" align="center" gap="2">
-                                < EyeClosedIcon />
-                                <Text className="badge-detail" weight="bold" size="1">3</Text>
-                            </Flex>
-                            <Flex className="badge" align="center" gap="2">
-                                < LinkBreak2Icon />
-                                <Text className="badge-detail" weight="bold" size="1">4</Text>
-                            </Flex>
-                            <Flex className="badge" align="center" gap="2">
-                                <RulerSquareIcon />
-                                <Text className="badge-detail" weight="bold" size="1">2.3</Text>
-                            </Flex>
-                        </Flex>
-                    </Flex>
-                    <Flex className='price-details' direction="column">
-                        <Text className="price" size="6" weight="bold">$350000</Text>
-                        <div className="icon heart">
-                            <HeartFilledIcon />
-                        </div>
+                                    <img src={house.image} alt="" />
+                                </div>
+                                <Flex className="details" direction="column" align="start" gap="4">
+                                    <Text className='title' size="4" weight="medium">{house.area}</Text>
+                                    <Text className='address' size="1" weight="">{house.address}</Text>
+                                    <Flex className="card-badges" gap="2">
+                                        <Flex className="badge" align="center" gap="2">
+                                            < EyeClosedIcon />
+                                            <Text className="badge-detail" weight="bold" size="1">{house.bedroom}</Text>
+                                        </Flex>
+                                        <Flex className="badge" align="center" gap="2">
+                                            < LinkBreak2Icon />
+                                            <Text className="badge-detail" weight="bold" size="1">{house.bathrooms}</Text>
+                                        </Flex>
+                                        <Flex className="badge" align="center" gap="2">
+                                            <RulerSquareIcon />
+                                            <Text className="badge-detail" weight="bold" size="1">{house.square_feet}</Text>
+                                        </Flex>
+                                    </Flex>
+                                </Flex>
+                                <Flex className='price-details' direction="column">
+                                    <Text className="price" size="6" weight="bold">${house.price}</Text>
+                                    <div className="icon heart">
+                                        <HeartFilledIcon />
+                                    </div>
 
-                    </Flex>
+                                </Flex>
 
 
-                </div>
+                            </div>
+                        )
+                    })
+                }
+
             </Flex>
 
 
