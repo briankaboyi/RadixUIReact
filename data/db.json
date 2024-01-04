@@ -1,3 +1,4 @@
+
 {
   "houses": [
     {
@@ -8,7 +9,8 @@
       "bedrooms": 4,
       "bathrooms": 2.5,
       "square_feet": 2500,
-      "garage": true
+      "garage": true,
+      "image":"../src/assets/h1"
     },
     {
       "id": 2,
@@ -18,7 +20,9 @@
       "bedrooms": 3,
       "bathrooms": 3,
       "square_feet": 2000,
-      "garage": false
+      "garage": false,
+      "image":"../src/assets/h2"
+
     },
     {
       "id": 3,
@@ -28,7 +32,9 @@
       "bedrooms": 5,
       "bathrooms": 4,
       "square_feet": 3200,
-      "garage": true
+      "garage": true,
+      "image":"../src/assets/h3"
+
     },
     {
       "id": 4,
@@ -38,7 +44,9 @@
       "bedrooms": 4,
       "bathrooms": 2.5,
       "square_feet": 2800,
-      "garage": true
+      "garage": true,
+      "image":"../src/assets/h4"
+
     },
     {
       "id": 5,
@@ -48,7 +56,9 @@
       "bedrooms": 6,
       "bathrooms": 3.5,
       "square_feet": 4000,
-      "garage": true
+      "garage": true,
+      "image":"../src/assets/h5"
+
     }
   ]
 }
