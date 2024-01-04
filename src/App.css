@@ -278,15 +278,15 @@ button {
   color: #fff;
 }
 .house-cards{
-  width:60%;
+  width:90%;
   /* border: 1px solid red; */
   background: white;
   padding: 30px;
   position: relative;
   top: -200px;
-  right: -40px;
+  /* right: -40px; */
   box-shadow: -2px 7px 30px -12px rgba(0, 0, 0, 0.459);
-
+justify-self: center;
 }
 .house-cards .card-item{
   box-sizing: border-box;

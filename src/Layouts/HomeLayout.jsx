@@ -6,14 +6,14 @@ import { Flex } from '@radix-ui/themes'
 function HomeLayout() {
     return (
         <div className="main-container">
-            
-                <Nav />
-           
-            <Flex  direction="column" justify="start">
+
+            <Nav />
+
+            <Flex direction="column" justify="start">
 
                 <Outlet />
             </Flex>
-          
+
         </div>
 
     )

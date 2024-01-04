@@ -20,7 +20,7 @@ function Property() {
     }, [])
 
     return (
-        <Grid className='property'>
+        <Grid className='property' >
             <Flex className="banner" direction="column" align="start" justify="start" gap="4">
                 <Text size="8" weight="bold">Homes for you</Text>
                 <Text size="4">Top Priority <ChevronDownIcon></ChevronDownIcon></Text>
@@ -36,17 +36,17 @@ function Property() {
                                     <img src={house.image} alt="" />
                                 </div>
                                 <Flex className="details" direction="column" align="start" gap="4">
-                                    <Text className='title' size="4" weight="medium">{house.area}</Text>
+                                    <Text className='title' size="3" weight="medium" align="left" style={{color:"#DF3478"}}>{house.area}</Text>
                                     <Text className='address' size="1" weight="">{house.address}</Text>
-                                    <Flex className="card-badges" gap="2">
+                                    <Flex className="card-badges" gap="2" wrap="wrap">
                                         <Flex className="badge" align="center" gap="2">
                                             < EyeClosedIcon />
-                                            <Text className="badge-detail" weight="bold" size="1">{house.bedroom}</Text>
+                                            <Text className="badge-detail" weight="bold" size="1">{house.bedrooms}</Text>
                                         </Flex>
-                                        <Flex className="badge" align="center" gap="2">
+                                        {/* <Flex className="badge" align="center" gap="2">
                                             < LinkBreak2Icon />
                                             <Text className="badge-detail" weight="bold" size="1">{house.bathrooms}</Text>
-                                        </Flex>
+                                        </Flex> */}
                                         <Flex className="badge" align="center" gap="2">
                                             <RulerSquareIcon />
                                             <Text className="badge-detail" weight="bold" size="1">{house.square_feet}</Text>
@@ -54,7 +54,7 @@ function Property() {
                                     </Flex>
                                 </Flex>
                                 <Flex className='price-details' direction="column">
-                                    <Text className="price" size="6" weight="bold">${house.price}</Text>
+                                    <Text className="price" size="5" weight="bold" style={{color:"#DF3478"}}>${house.price}</Text>
                                     <div className="icon heart">
                                         <HeartFilledIcon />
                                     </div>
