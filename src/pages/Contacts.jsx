@@ -7,8 +7,10 @@ import React from 'react'
 function Contacts() {
   return (
     <Flex className='contact-page' direction="column" gap="9">
-
-      <Text as="h1">Lets Connect and Navigate Your <br /> Housing Goals</Text>
+      <div className="contact-title banner">
+        <Text as="h1">Lets Connect and Navigate Your <br /> Housing Goals</Text>
+      </div>
+      
       <Flex className=" info-container" justify="between">
         <Grid>
           <Form.Root className="FormRoot" style={{
