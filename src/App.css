@@ -66,7 +66,7 @@
 }
 
 /* /////////////////////////////// */
-.hero,.banner,.house-cards{
+.hero,.banner,.house-cards,.contact-page{
   padding: 60px 40px;
   border-radius: 30px;
 }
@@ -348,5 +348,92 @@ justify-self: center;
   padding: 5px 10px;
   box-shadow:inset -2px 7px 12px 8px rgba(255, 0, 212, 0.158);
 
+
+}
+
+/* ///////////////////////////
+ */
+ .FormRoot{
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-areas: "first last" "email email" "phone phone" "message message" "button button"
+
+ }
+ .FormRoot .first{
+  grid-area: first;
+ }
+ .FormRoot .last{
+  grid-area: last;
+ }
+ .FormRoot .email{
+  grid-area: email;
+ }
+ .FormRoot .phone{
+  grid-area: phone;
+ }
+ .FormRoot .message{
+  grid-area: message;
+ }
+ .FormRoot .Button{
+  grid-area: button;
+  color: #fff;
+ }
+ .FormRoot .FormField .FormLabel{
+color: #000000;
+ }
+
+ .FormField .input-div{
+  align-items: center;
+  color: rgb(29, 29, 29);
+  text-align: left;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 5px ;
+  height: 40px;
+
+
+}
+.FormField .icon{
+  color: #2b2b2b73;
+  position: relative;
+  right: -7px;
+}
+.FormField .Input{
+  justify-self: right;
+  width: 93%;
+  border: none;
+  border-radius: 0px 5px 5px 0px ;
+  height: 100%;
+}
+.FormField .name-input{
+  width: 86%;
+
+}
+.FormField .Textarea{
+  background: #fff;
+  text-align: left;
+}
+.FormField .FormMessage{
+  color: #ff0000;
+  text-align: right;
+  font-size: 10px;
+}
+/* //////////////////////////// */
+
+.contact-page .details div{
+  text-align: left;
+
+}
+.contact-page .info-container{
+  justify-content: space-around;
+  height: 550px ;
+}
+.contact-page .details{
+  box-sizing: border-box;
+  padding: 60px;
+  box-shadow: -2px 7px 30px -12px rgba(0, 0, 0, 0.459);
+  border-radius: 15px;
+  background: linear-gradient(#df3478,#df347871);
+  color: #fff;
 
 }
