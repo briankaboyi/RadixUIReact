@@ -70,6 +70,7 @@
 .contact-page {
   padding: 60px 40px;
   border-radius: 30px;
+  transform: rotate();
 }
 /* //////////////////// */
 .hero {
@@ -434,4 +435,11 @@ button {
   background: linear-gradient(#df3478, #df347871);
   color: #fff;
   width: 40%;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.four{
+  font-size:160px ;
 }

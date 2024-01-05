@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 import Property from "./pages/Property";
 import Services from "./pages/Services";
 import Contacts from "./pages/Contacts";
+import Notfound from "./pages/Notfound";
 
 function App() {
   getAllHouses()
@@ -23,7 +24,10 @@ function App() {
           <Route index element={<Home />} />
           <Route path="property" element={<Property />} />
           <Route path="contacts" element={<Contacts />} />
+
         </Route>
+        <Route path="*" element={<Notfound />} />
+
       </Routes>
 
     </BrowserRouter>
