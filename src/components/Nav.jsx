@@ -36,16 +36,7 @@ export default function Nav() {
         </Text>
         </NavLink>
         
-       <NavLink to="services">
-       <Text
-          size="1"
-          weight="bold"
-          onClick={handleClick}
-          className={"nav-item " }
-        >
-          Services
-        </Text>
-       </NavLink>
+       
         <NavLink to="property">
           <Text
           size="1"

@@ -15,7 +15,7 @@ function Contacts() {
         <Grid>
           <Form.Root className="FormRoot" style={{
             background: "none",
-            width: "450px",
+            width: "400px",
             padding: "0px"
           }}>
             {/* ////////////// */}
