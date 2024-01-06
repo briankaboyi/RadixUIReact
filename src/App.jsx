@@ -26,7 +26,7 @@ function App() {
           <Route path="contacts" element={<Contacts />} />
 
         </Route>
-        <Route path="*" element={<Notfound />} />
+        <Route path="*" element={<notfound />} />
 
       </Routes>
 
