@@ -1,9 +1,11 @@
 import { Button, Flex, Text } from '@radix-ui/themes'
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom';
 
 export default function Nav() {
-  const active = "active";
-  const inactive = "b-faded";
+  const active = {color:"#333",opacity:"1"};
+  const inactive ={color:   "#a3a2a2"
+  };
 
   const handleClick = (e) => {
     const parent = e.target.parentElement.children;
@@ -25,10 +27,12 @@ export default function Nav() {
     <Flex className="nav" justify="between" align={"center"}>
       <Text className="logo">Urban</Text>
       <Flex className="nav-bar" gap="5">
-        <Text size="1" weight="bold" onClick={handleClick} className={"nav-item " + active}>Home</Text>
-        <Text size="1" weight="bold" onClick={handleClick} className={"nav-item " + inactive}>Services</Text>
-        <Text size="1" weight="bold" onClick={handleClick} className={"nav-item " + inactive}>Property</Text>
-        <Text size="1" weight="bold" onClick={handleClick} className={"nav-item " + inactive}>Contact</Text>
+        <NavLink to="/"><Text size="1" weight="bold" onClick={handleClick} className={"nav-item " + active}>Home</Text></NavLink>
+        <NavLink to="property"> <Text size="1" weight="bold" onClick={handleClick} className={"nav-item " + inactive}>Property</Text></NavLink>
+        <NavLink to="contacts">  <Text size="1" weight="bold" onClick={handleClick} className={"nav-item " + inactive}>Contact</Text></NavLink>
+        
+        
+       
       </Flex>
       <Flex gap="5">
         <Button size="2" variant="outline">

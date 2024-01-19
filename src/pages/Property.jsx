@@ -14,16 +14,18 @@ import h1 from "../assets/h1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import getAllHouses from "../../services/houses.api";
 import { NavLink } from "react-router-dom";
+import { BASEURL, fetchApi } from "../../services/fetch.api";
 // import { faCoffee, heart } from '@fortawesome/free-solid-svg-icons'
 
 function Property() {
   const [houses, setHouses] = useState([]);
-  const [error, setError] = useState([]);
+  const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   async function getData() {
     try {
       setLoading(true);
-      const data = await getAllHouses();
+      const data = await fetchApi();
+     
       console.log(data);
       setHouses(data);
       setLoading(false);
@@ -36,12 +38,11 @@ function Property() {
         setLoading(false);
     }
   }
-//   async function getOtherData(){
-//     try{}
-//   }
+ 
   console.log(houses);
   useEffect(() => {
     getData();
+    // getMainData()
     // getOtherData();
 
   }, []);
@@ -126,10 +127,7 @@ function Property() {
                       {house.bedrooms}
                     </Text>
                   </Flex>
-                  {/* <Flex className="badge" align="center" gap="2">
-                                            < LinkBreak2Icon />
-                                            <Text className="badge-detail" weight="bold" size="1">{house.bathrooms}</Text>
-                                        </Flex> */}
+               
                   <Flex className="badge" align="center" gap="2">
                     <RulerSquareIcon />
                     <Text className="badge-detail" weight="bold" size="1">

@@ -348,6 +348,9 @@ button {
   grid-column-gap: 15px;
   grid-template-areas: "first last" "email email" "phone phone" "message message" "button button";
 }
+.FormLabel{
+  text-align: left;
+}
 .FormRoot .first {
   grid-area: first;
 }
@@ -366,6 +369,11 @@ button {
 .FormRoot .Button {
   grid-area: button;
   color: #fff;
+  background-color: #4e4e4e;
+}
+.FormRoot .Button:hover{
+  background-color: #000000;
+
 }
 .FormRoot .FormField .FormLabel {
   color: #000000;
@@ -389,6 +397,7 @@ button {
   justify-self: right;
   width: 93%;
   border: none;
+  border-left-style: groove;
   border-radius: 0px 5px 5px 0px;
   height: 100%;
 }

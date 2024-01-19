@@ -21,7 +21,7 @@ function Contacts() {
             {/* ////////////// */}
             <Form.Field className="FormField first" name="firstName">
               <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
-                <Form.Label className="FormLabel">First Name</Form.Label>
+                <Form.Label className="FormLabel" >First Name</Form.Label>
                 <Form.Message className="FormMessage" match="valueMissing">
                   Please enter your first name
                 </Form.Message>
