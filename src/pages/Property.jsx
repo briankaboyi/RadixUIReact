@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import getAllHouses from "../../services/houses.api";
 import { NavLink } from "react-router-dom";
 import { BASEURL, fetchApi } from "../../services/fetch.api";
-// import { faCoffee, heart } from '@fortawesome/free-solid-svg-icons'
+
 
 function Property() {
   const [houses, setHouses] = useState([]);
@@ -42,8 +42,7 @@ function Property() {
   console.log(houses);
   useEffect(() => {
     getData();
-    // getMainData()
-    // getOtherData();
+ 
 
   }, []);
 
