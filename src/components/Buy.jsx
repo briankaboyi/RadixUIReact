@@ -3,7 +3,6 @@ import React, { useRef, useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import * as Form from "@radix-ui/react-form";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
-// import { Dialog } from "@radix-ui/react-dialog";
 
 function Buy() {
   const [city, setCity] = useState("New York");
