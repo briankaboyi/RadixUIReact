@@ -12,7 +12,6 @@ export default function Nav() {
     const element = e.target;
 
     for (let c of parent) {
-      // c.classList.add(inactive);
 
       if (c.classList.contains(active)) {
         c.classList.remove(active)
